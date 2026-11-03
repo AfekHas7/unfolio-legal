@@ -17,11 +17,12 @@
   --purple-500: #8b5cf6;
   --mint-400: #34e5c4;
 
-  /* Hebrew-capable families are listed explicitly before the generic
-     sans-serif. Without them iOS resolves the tail of the stack to Helvetica,
-     which has no Hebrew coverage, and every Hebrew glyph renders as tofu —
-     including the "עברית" link sitting inside the English documents. The
-     browser picks per character, so Latin text still gets Rubik/system UI. */
+  /* Hebrew-capable families are named explicitly before the generic
+     sans-serif, which on several platforms resolves to a face with no Hebrew
+     coverage (Helvetica on Apple, for instance). Browsers choose per
+     character, so Latin text still gets Rubik / the system UI font while
+     Hebrew falls through to a face that actually has the glyphs — including
+     the "עברית" link that sits inside the English documents. */
   --font-sans:
     "Rubik", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     "Helvetica Neue", "Arial Hebrew", "Noto Sans Hebrew", Arial, sans-serif;
@@ -62,9 +63,12 @@ html[lang="he"] body {
 }
 
 .doc {
+  width: 100%;
   max-width: 68ch;
   margin: 0 auto;
   padding: clamp(2.5rem, 7vw, 5rem) clamp(1.25rem, 5vw, 2rem) 3rem;
+  /* Long unbroken tokens (an email, a URL) wrap instead of widening the page. */
+  overflow-wrap: break-word;
 }
 
 /* ---- Headings ---- */
@@ -247,8 +251,10 @@ html[dir="rtl"] .doc blockquote {
 /* ---- Footer ---- */
 
 .foot {
+  width: 100%;
   max-width: 68ch;
   margin: 0 auto;
+  overflow-wrap: break-word;
   padding: 2rem clamp(1.25rem, 5vw, 2rem) 3.5rem;
   border-block-start: 1px solid var(--border-subtle);
   color: var(--text-tertiary);
