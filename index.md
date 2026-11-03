@@ -2,7 +2,7 @@
 layout: legal
 title: Legal
 lang: en
-dir: ltr
+direction: ltr
 description: Privacy Policy and Terms of Service for the Unfolio app, in English and Hebrew.
 permalink: /
 ---

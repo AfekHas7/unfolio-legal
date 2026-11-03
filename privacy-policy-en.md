@@ -2,7 +2,7 @@
 layout: legal
 title: "Privacy Policy"
 lang: en
-dir: ltr
+direction: ltr
 description: "How Unfolio handles your data: everything is processed on your device, nothing is uploaded."
 permalink: /privacy-policy-en/
 ---

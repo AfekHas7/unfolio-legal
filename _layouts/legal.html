@@ -1,5 +1,9 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'en' }}" dir="{{ page.dir | default: 'ltr' }}">
+{%- comment -%}
+  `direction`, not `dir`: page.dir is a reserved Jekyll variable holding the
+  source file's directory, and it silently wins over front matter.
+{%- endcomment -%}
+<html lang="{{ page.lang | default: 'en' }}" dir="{{ page.direction | default: 'ltr' }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -2,7 +2,7 @@
 layout: legal
 title: "מדיניות פרטיות"
 lang: he
-dir: rtl
+direction: rtl
 description: "איך Unfolio מטפלת בנתונים שלך: הכל מעובד על המכשיר, שום דבר לא מועלה."
 permalink: /privacy-policy-he/
 ---

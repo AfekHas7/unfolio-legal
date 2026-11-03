@@ -2,7 +2,7 @@
 layout: legal
 title: "Terms of Service"
 lang: en
-dir: ltr
+direction: ltr
 description: "The end-user licence agreement for the Unfolio app."
 permalink: /terms-en/
 ---

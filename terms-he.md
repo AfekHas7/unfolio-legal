@@ -2,7 +2,7 @@
 layout: legal
 title: "תנאי שימוש"
 lang: he
-dir: rtl
+direction: rtl
 description: "הסכם הרישיון למשתמש הקצה של אפליקציית Unfolio."
 permalink: /terms-he/
 ---
