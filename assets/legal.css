@@ -16,6 +16,15 @@
   --purple-400: #a87bff;
   --purple-500: #8b5cf6;
   --mint-400: #34e5c4;
+
+  /* Hebrew-capable families are listed explicitly before the generic
+     sans-serif. Without them iOS resolves the tail of the stack to Helvetica,
+     which has no Hebrew coverage, and every Hebrew glyph renders as tofu —
+     including the "עברית" link sitting inside the English documents. The
+     browser picks per character, so Latin text still gets Rubik/system UI. */
+  --font-sans:
+    "Rubik", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    "Helvetica Neue", "Arial Hebrew", "Noto Sans Hebrew", Arial, sans-serif;
 }
 
 *,
@@ -40,9 +49,7 @@ body {
     ),
     var(--bg-base);
   color: var(--text-secondary);
-  font-family:
-    "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-sans);
   font-size: 17px;
   line-height: 1.7;
   text-rendering: optimizeLegibility;

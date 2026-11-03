@@ -13,7 +13,10 @@ relative_links:
 
 kramdown:
   input: GFM
-  hard_wrap: false
+  # The source documents never soft-wrap prose (paragraphs are single long
+  # lines), so a newline is always an intentional break — e.g. the
+  # Effective date / Last updated / Publisher / Contact header block.
+  hard_wrap: true
 
 exclude:
   - README.md
