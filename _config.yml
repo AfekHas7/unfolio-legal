@@ -1,0 +1,21 @@
+title: Unfolio — Legal
+description: Privacy Policy and Terms of Service for the Unfolio app.
+baseurl: "/unfolio-legal"
+url: "https://afekhas7.github.io"
+
+# No theme is set on purpose — _layouts/legal.html is the whole site.
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

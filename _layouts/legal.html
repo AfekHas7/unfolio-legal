@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}" dir="{{ page.dir | default: 'ltr' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · Unfolio</title>
+{%- if page.description %}
+<meta name="description" content="{{ page.description }}">
+{%- endif %}
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="{{ '/assets/legal.css' | relative_url }}">
+</head>
+<body>
+<main class="doc">
+{{ content }}
+</main>
+<footer class="foot">
+<p>Unfolio — Afek Hasson · <a href="mailto:afekhasson7@gmail.com">afekhasson7@gmail.com</a></p>
+<p class="foot-note">Not affiliated with Instagram or Meta Platforms, Inc.</p>
+</footer>
+</body>
+</html>

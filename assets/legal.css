@@ -1,0 +1,300 @@
+/* Unfolio legal documents — dark theme, 1:1 with the app's color tokens
+   (lib/core/theme/app_colors.dart). Direction-agnostic: every inline offset
+   uses logical properties so the Hebrew pages mirror correctly under dir=rtl. */
+
+:root {
+  --bg-base: #0a0a14;
+  --bg-raised: #101019;
+  --surface-1: #14141f;
+  --surface-2: #1b1b28;
+  --border-subtle: rgba(244, 244, 251, 0.08);
+  --border-default: rgba(244, 244, 251, 0.14);
+  --text-primary: #f4f4fb;
+  --text-secondary: rgba(244, 244, 251, 0.72);
+  --text-tertiary: rgba(244, 244, 251, 0.46);
+  --purple-300: #c9a8ff;
+  --purple-400: #a87bff;
+  --purple-500: #8b5cf6;
+  --mint-400: #34e5c4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-base);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(
+      120ch 60ch at 50% -10ch,
+      rgba(139, 92, 246, 0.14),
+      transparent 70%
+    ),
+    var(--bg-base);
+  color: var(--text-secondary);
+  font-family:
+    "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+/* Hebrew sets a touch larger — the glyphs carry less x-height at 17px. */
+html[lang="he"] body {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.doc {
+  max-width: 68ch;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 7vw, 5rem) clamp(1.25rem, 5vw, 2rem) 3rem;
+}
+
+/* ---- Headings ---- */
+
+.doc h1,
+.doc h2,
+.doc h3 {
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.doc h1 {
+  margin: 0 0 1.75rem;
+  font-size: clamp(1.9rem, 5.5vw, 2.5rem);
+  letter-spacing: -0.02em;
+}
+
+.doc h2 {
+  margin: 3.25rem 0 1rem;
+  padding-block-start: 0.4rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+}
+
+.doc h3 {
+  margin: 2.25rem 0 0.75rem;
+  font-size: 1.1rem;
+  color: var(--purple-300);
+}
+
+/* ---- Body copy ---- */
+
+.doc p {
+  margin: 0 0 1.15rem;
+}
+
+.doc strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.doc em {
+  color: var(--text-tertiary);
+  font-style: normal;
+}
+
+/* The "Other versions" line directly under the contact block. */
+.doc h1 + p,
+.doc p > em:only-child {
+  font-size: 0.95rem;
+}
+
+.doc a {
+  color: var(--purple-400);
+  text-decoration-color: rgba(168, 123, 255, 0.4);
+  text-underline-offset: 0.2em;
+  transition: color 0.15s ease;
+}
+
+.doc a:hover,
+.doc a:focus-visible {
+  color: var(--purple-300);
+  text-decoration-color: currentColor;
+}
+
+/* ---- Lists ---- */
+
+.doc ul,
+.doc ol {
+  margin: 0 0 1.25rem;
+  padding-inline-start: 1.5rem;
+}
+
+.doc li {
+  margin-block-end: 0.5rem;
+}
+
+.doc li::marker {
+  color: var(--purple-500);
+}
+
+/* ---- Rules, quotes, code ---- */
+
+.doc hr {
+  margin: 2.75rem 0;
+  border: 0;
+  border-block-start: 1px solid var(--border-subtle);
+}
+
+.doc blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-inline-start: 3px solid var(--purple-500);
+  border-radius: 0 10px 10px 0;
+  background: var(--surface-1);
+  color: var(--text-primary);
+}
+
+html[dir="rtl"] .doc blockquote {
+  border-radius: 10px 0 0 10px;
+}
+
+.doc blockquote p:last-child {
+  margin-block-end: 0;
+}
+
+.doc code {
+  padding: 0.12em 0.4em;
+  border: 1px solid var(--border-subtle);
+  border-radius: 5px;
+  background: var(--surface-2);
+  color: var(--mint-400);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  /* Identifiers and URLs stay LTR even inside Hebrew prose. */
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+/* ---- Tables (scroll on their own, never the page) ---- */
+
+.doc table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.doc th,
+.doc td {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--border-subtle);
+  text-align: start;
+  vertical-align: top;
+}
+
+.doc th {
+  background: var(--surface-1);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ---- Index page ---- */
+
+.index-list {
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-list li {
+  margin-block-end: 0.75rem;
+}
+
+.index-list a {
+  display: block;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border-default);
+  border-radius: 14px;
+  background: var(--surface-1);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.index-list a:hover,
+.index-list a:focus-visible {
+  border-color: var(--purple-500);
+  background: var(--surface-2);
+}
+
+/* ---- Footer ---- */
+
+.foot {
+  max-width: 68ch;
+  margin: 0 auto;
+  padding: 2rem clamp(1.25rem, 5vw, 2rem) 3.5rem;
+  border-block-start: 1px solid var(--border-subtle);
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+}
+
+.foot p {
+  margin: 0 0 0.35rem;
+}
+
+.foot a {
+  color: var(--text-tertiary);
+}
+
+.foot-note {
+  font-size: 0.8rem;
+}
+
+/* ---- Print: ink-friendly ---- */
+
+@media print {
+  body {
+    background: #fff;
+    color: #111;
+    font-size: 11pt;
+  }
+
+  .doc h1,
+  .doc h2,
+  .doc strong {
+    color: #000;
+  }
+
+  .doc h3 {
+    color: #333;
+  }
+
+  .doc a {
+    color: #000;
+  }
+
+  .doc blockquote {
+    background: #f4f4f4;
+    border-inline-start-color: #888;
+    color: #111;
+  }
+
+  .doc code {
+    background: #f4f4f4;
+    color: #111;
+  }
+
+  .foot {
+    color: #555;
+  }
+}
