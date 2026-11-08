@@ -10,7 +10,7 @@ permalink: /terms-en/
 # Unfolio — Terms of Service
 
 **Effective date:** 3 August 2026
-**Last updated:** 3 August 2026
+**Last updated:** 8 November 2026
 
 **Publisher:** Afek Hasson, an individual developer based in Israel
 **Contact:** afekhasson7@gmail.com
@@ -91,20 +91,20 @@ Unfolio has **no free tier**. Access to the app's features requires an active su
 
 ### 7.1 The plans
 
-| Plan | Length | Price (Israel) | Free trial |
+| Plan | Length | Price (indicative) | Free trial |
 |---|---|---|---|
-| **Monthly** | 1 month, auto-renewing | ~₪4.90 per month | **No trial** — charged immediately |
-| **Yearly** | 12 months, auto-renewing | ~₪29.90 per year | **3-day free trial** |
-| **Lifetime** | One-time purchase, non-renewing | ~₪79.90 once | **No trial** — charged immediately |
+| **Monthly** | 1 month, auto-renewing | ~₪4.90 / ~$4.99 per month | **No trial** — charged immediately |
+| **Yearly** | 12 months, auto-renewing | ~₪39.90 / ~$29.99 per year | **3-day free trial** |
+| **Lifetime** | One-time purchase, non-renewing | ~₪79.90 / ~$49.99 once | **No trial** — charged immediately |
 
-Prices shown are for the Israeli store and are indicative. **The price you actually pay is the one shown on the purchase screen in your own store, in your own currency, at the time you buy**, and it may differ because of local pricing tiers, currency conversion, and applicable VAT or sales tax. The purchase screen is authoritative.
+Prices shown are for the Israeli and United States stores and are indicative. **The price you actually pay is the one shown on the purchase screen in your own store, in your own currency, at the time you buy**, and it may differ because of local pricing tiers, currency conversion, and applicable VAT or sales tax. The purchase screen is authoritative.
 
 ### 7.2 Free trials
 
 Where a free trial is offered:
 
 - **You are not charged anything until the trial ends.** This is a commitment, and the purchase screen states it plainly.
-- The trial lasts 3 days from the moment you start it.
+- The trial lasts 3 days (as stated on the purchase screen) from the moment you start it.
 - If you do not cancel **at least 24 hours before the trial ends**, the trial converts automatically to a paid subscription and your payment method is charged.
 - You may cancel at any point during the trial and you will not be charged. You keep access for the remainder of the trial period.
 - Trials are limited to one per user, per subscription group, as determined by Apple or Google. If you have used a trial before, you may be charged immediately.
