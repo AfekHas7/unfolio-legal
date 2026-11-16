@@ -13,7 +13,7 @@ permalink: /terms-he/
 **עדכון אחרון:** 8 בנובמבר 2026
 
 **המפרסם:** אפק חסון, מפתח עצמאי מישראל
-**יצירת קשר:** afekhasson7@gmail.com
+**יצירת קשר:** unfolio.ltd@gmail.com
 
 *גרסאות נוספות: [Terms of Service (English)](terms-en.md) · [מדיניות פרטיות](privacy-policy-he.md)*
 
@@ -306,7 +306,7 @@ Meta רשאית, לפי שיקול דעתה הבלעדי וללא התראה:
 ## 21. יצירת קשר
 
 **אפק חסון**
-דוא"ל: **afekhasson7@gmail.com**
+דוא"ל: **unfolio.ltd@gmail.com**
 
 ---
 

@@ -13,7 +13,7 @@ permalink: /terms-en/
 **Last updated:** 8 November 2026
 
 **Publisher:** Afek Hasson, an individual developer based in Israel
-**Contact:** afekhasson7@gmail.com
+**Contact:** unfolio.ltd@gmail.com
 
 *Other versions: [תנאי שימוש (עברית)](terms-he.md) · [Privacy Policy](privacy-policy-en.md)*
 
@@ -304,7 +304,7 @@ Before starting formal proceedings, we would genuinely prefer that you email us 
 ## 21. Contact
 
 **Afek Hasson**
-Email: **afekhasson7@gmail.com**
+Email: **unfolio.ltd@gmail.com**
 
 ---
 

@@ -10,10 +10,10 @@ permalink: /privacy-policy-en/
 # Unfolio — Privacy Policy
 
 **Effective date:** 3 August 2026
-**Last updated:** 3 August 2026
+**Last updated:** 16 November 2026
 
 **Publisher:** Afek Hasson, an individual developer based in Israel
-**Contact:** afekhasson7@gmail.com
+**Contact:** unfolio.ltd@gmail.com
 
 *Other versions: [מדיניות פרטיות (עברית)](privacy-policy-he.md) · [Terms of Service](terms-en.md)*
 
@@ -23,7 +23,7 @@ permalink: /privacy-policy-en/
 
 Unfolio has no server, no account, and no login. You never give us — or the app — your Instagram password, because the app has no way to use one.
 
-Your Instagram data export is opened and analysed **on your phone**. The follower and following lists it produces stay on your phone. They are never uploaded, never sent to us, and never shared with anyone. We could not read them even if we wanted to; there is nowhere for them to go.
+Your Instagram data export is opened and analysed **on your phone**. The lists it produces — your followers, the accounts you follow, the follow requests you sent and the accounts you blocked — stay on your phone. They are never uploaded, never sent to us, and never shared with anyone. We could not read them even if we wanted to; there is nowhere for them to go.
 
 The only information that ever leaves your device is what is needed to confirm that your subscription is valid — handled by Apple, Google and RevenueCat, and described in Section 7.
 
@@ -39,7 +39,7 @@ Unfolio ("Unfolio", "the app") is published by **Afek Hasson**, an individual de
 
 For the purposes of the EU General Data Protection Regulation (GDPR), the UK GDPR, and Israel's Privacy Protection Law, 5741-1981, Afek Hasson is the **data controller** for the limited personal data described in this policy.
 
-You can reach us at any time at **afekhasson7@gmail.com**. We answer in Hebrew or English.
+You can reach us at any time at **unfolio.ltd@gmail.com**. We answer in Hebrew or English.
 
 This policy explains what happens to information when you use Unfolio. It applies to the Unfolio mobile app on iOS and Android.
 
@@ -52,7 +52,7 @@ Unfolio helps you use that file:
 1. You request your own data export from Instagram. You do this yourself, inside Instagram, using your own account. Unfolio is not involved in this step and cannot do it for you.
 2. Instagram sends the export to you as a ZIP file.
 3. You open that ZIP file in Unfolio.
-4. Unfolio reads the file **on your device**, compares your followers list against your following list, and shows you the result: who does not follow you back, who you do not follow back, and who follows you mutually.
+4. Unfolio reads the file **on your device**, compares your followers list against your following list, and shows you the result: who does not follow you back, who you do not follow back, and who follows you mutually. From the same part of the export it can also show which follow requests you sent are still pending, and how long you and a mutual have followed each other.
 
 That is the whole product. There is no step in which anything is uploaded.
 
@@ -62,7 +62,7 @@ We want to be specific, because "we respect your privacy" means nothing on its o
 
 - **Your Instagram password.** The app never asks for it, has no field to enter it, and could not use it if you typed it somewhere. Unfolio does not log in to Instagram and does not use the Instagram API. If any app in this category asks you for your Instagram password, do not give it to them.
 - **Your name, email address, phone number, or date of birth.** There is no account to create, so there is nothing to fill in.
-- **Your follower or following lists.** These are produced on your device and stay on your device.
+- **Your follower or following lists, your pending follow requests, or your blocked list.** These are read on your device and stay on your device.
 - **Anything else inside your Instagram export.** Your export may contain your photos, videos, direct messages, comments, likes, search history, contact information, and advertising data. Unfolio reads **none of it**. See Section 5.
 - **Your location.** The app does not request location permission and does not use it.
 - **Your contacts, photo library, camera, or microphone.** The app does not request access to any of these.
@@ -80,29 +80,35 @@ The complete list of what is stored is:
 
 | What | Contents | Why |
 |---|---|---|
-| **Snapshots** | A random identifier, the date and time of the import, the list of usernames who follow you, and the list of usernames you follow | So you can compare imports over time and see who unfollowed you since last time |
+| **Snapshots** | A random identifier; the date and time of the import; the date in the export's file name; the usernames who follow you and the usernames you follow, each with the date Instagram recorded for the follow; the usernames you sent a follow request to that is still pending, each with the date Instagram recorded for the request; and the usernames you have blocked | So you can compare imports over time and see who unfollowed you since last time, without listing people you blocked; see which requests are still pending; and see how long you and a mutual have followed each other |
 | **Hidden accounts** | Usernames you have chosen to hide, and the date you hid them | So hidden accounts stay hidden across future imports |
-| **App preferences** | Your chosen language, whether you have completed onboarding, and your notification settings | So the app behaves consistently between launches |
+| **Marks** | Usernames you marked as unfollowed by you, or as a follow request you cancelled; the date you marked them; and the date of the first import that no longer showed them | So you can keep your place while you go through your lists. A mark is removed once two imports in a row no longer show you following that account, or that request as pending |
+| **App preferences** | Your chosen language, whether you have completed onboarding, your notification settings, which tips you have seen, and your own Instagram username (taken from the export's file name; you can change it) | So the app behaves consistently between launches, and shows which account the data belongs to |
+| **Subscription status** | Whether your subscription was active the last time the app checked, and when that check happened. RevenueCat's code inside the app also keeps its own working data on the device: your anonymous user ID, a copy of your purchase status, the plans and prices it last fetched, and recent answers from RevenueCat's servers | So you can keep using the app for a few days without an internet connection. The app's copy stays on your device only; what RevenueCat receives is listed in section 7.2 |
 
-That is all. Note in particular what is *not* in that table: no full names, no profile pictures, no biographies, no email addresses, no phone numbers, no post content. Unfolio stores **usernames and dates**, and nothing more.
+That is all. Note in particular what is *not* in that table: no full names, no profile pictures, no biographies, no email addresses, no phone numbers, no post content. Unfolio stores **usernames and dates**, plus the subscription status above, and nothing more.
 
 **Backups.** If you have iCloud Backup (iOS) or Google One / Android Backup enabled on your phone, your device may include Unfolio's local data in your own encrypted device backup, in the same way it backs up your other apps. That backup belongs to you and is governed by Apple's or Google's terms, not ours. We have no access to it. You can exclude it by turning off backup for Unfolio in your device settings.
 
 **Deleting it.** You are always in control of this data:
 
-- **Settings → Your data → Delete all data** removes every snapshot and hidden account from your device immediately and permanently.
+- **Settings → Your data → Delete all data** removes every snapshot, hidden account and mark from your device immediately and permanently.
 - **Uninstalling the app** removes all of it as well.
 
 There is no "request deletion by email and wait 30 days" process, because there is no copy of it anywhere else to delete.
 
 ## 5. What the app reads from your export — and what it deliberately ignores
 
-Your Instagram export is a large archive containing many files. Unfolio's parser opens the ZIP in memory and looks for exactly two things:
+Your Instagram export is a large archive containing many files. Unfolio's parser opens the ZIP in memory and looks for exactly four files, by name:
 
 - `followers_1.json` (and any additional numbered follower files)
 - `following.json`
+- `pending_follow_requests.json` — the follow requests you sent that are still pending
+- `blocked_profiles.json` — the accounts you blocked
 
-From those files it extracts **usernames only**. It does not read, index, copy, or retain profile URLs, timestamps of when a follow happened, or any other field.
+In a current export all four are in the "followers and following" folder.
+
+From the first three it keeps **usernames and one date each**: the date Instagram recorded for the follow or the request. From the blocked list it keeps **usernames only**. Everything else in those files — profile links, display names, internal identifiers — is discarded as soon as the file has been read. None of it is stored.
 
 Every other file in your export — your photos, your messages, your stories, your saved posts, your login history, your ads data, your personal information file — is never opened. The app has no reason to look at them, so it does not.
 
@@ -181,7 +187,7 @@ Because your Unfolio data lives on your own device, you can exercise most privac
 
 You have the right to request access to, rectification of, or erasure of your personal data; to restrict or object to processing; to data portability; and to withdraw consent at any time without affecting processing already carried out.
 
-In practice, the only personal data we could act on is the subscription record held by RevenueCat, since we hold nothing else. Email us at **afekhasson7@gmail.com** with your request and, if possible, your purchase receipt so we can locate the record. We will respond within 30 days.
+In practice, the only personal data we could act on is the subscription record held by RevenueCat, since we hold nothing else. Email us at **unfolio.ltd@gmail.com** with your request and, if possible, your purchase receipt so we can locate the record. We will respond within 30 days.
 
 You also have the right to lodge a complaint with your national data protection supervisory authority.
 
@@ -215,7 +221,7 @@ Unfolio is not intended for children under **13**. In countries where local law 
 
 We do not knowingly collect personal information from children. Because the app requires no registration and collects no identifying information, we have no way to determine a user's age.
 
-If you are a parent or guardian and believe a child has used Unfolio in a way that concerns you, contact us at **afekhasson7@gmail.com**. Note that any data the child produced is stored on that child's device only, and can be removed instantly from Settings or by uninstalling the app.
+If you are a parent or guardian and believe a child has used Unfolio in a way that concerns you, contact us at **unfolio.ltd@gmail.com**. Note that any data the child produced is stored on that child's device only, and can be removed instantly from Settings or by uninstalling the app.
 
 ## 13. Security
 
@@ -238,7 +244,7 @@ If a change is material — meaning it affects what data is collected or how it 
 Questions, requests, corrections, or complaints:
 
 **Afek Hasson**
-Email: **afekhasson7@gmail.com**
+Email: **unfolio.ltd@gmail.com**
 
 ---
 

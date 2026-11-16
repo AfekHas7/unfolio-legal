@@ -3,7 +3,7 @@ layout: legal
 title: Legal
 lang: en
 direction: ltr
-description: Privacy Policy and Terms of Service for the Unfolio app, in English and Hebrew.
+description: Privacy Policy, Terms of Service and Support for the Unfolio app, in English and Hebrew.
 permalink: /
 ---
 
@@ -18,6 +18,8 @@ conflict between the versions.
   <li><a href="{{ '/terms-en/' | relative_url }}" lang="en">Terms of Service</a></li>
   <li><a href="{{ '/privacy-policy-he/' | relative_url }}" lang="he" dir="rtl">מדיניות פרטיות</a></li>
   <li><a href="{{ '/terms-he/' | relative_url }}" lang="he" dir="rtl">תנאי שימוש</a></li>
+  <li><a href="{{ '/support-en/' | relative_url }}" lang="en">Support</a></li>
+  <li><a href="{{ '/support-he/' | relative_url }}" lang="he" dir="rtl">תמיכה</a></li>
 </ul>
 
-Questions about either document: [afekhasson7@gmail.com](mailto:afekhasson7@gmail.com).
+Questions about either document: [unfolio.ltd@gmail.com](mailto:unfolio.ltd@gmail.com).

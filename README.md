@@ -7,10 +7,11 @@ app, published via GitHub Pages so the in-app and App Store links resolve:
 | --- | --- | --- |
 | Privacy Policy | [privacy-policy-en](https://afekhas7.github.io/unfolio-legal/privacy-policy-en/) | [privacy-policy-he](https://afekhas7.github.io/unfolio-legal/privacy-policy-he/) |
 | Terms of Service | [terms-en](https://afekhas7.github.io/unfolio-legal/terms-en/) | [terms-he](https://afekhas7.github.io/unfolio-legal/terms-he/) |
+| Support | [support-en](https://afekhas7.github.io/unfolio-legal/support-en/) | [support-he](https://afekhas7.github.io/unfolio-legal/support-he/) |
 
 ## Don't edit the markdown here
 
-The four `*.md` files are **generated**. The source of truth is `legal/*.md` in
+The six `*.md` documents (privacy, terms, support × EN/HE) are **generated**. The source of truth is `legal/*.md` in
 the private Unfolio app repo; this repo holds a copy with Jekyll front matter
 prepended. To publish a change:
 
