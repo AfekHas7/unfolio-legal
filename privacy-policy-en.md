@@ -10,7 +10,7 @@ permalink: /privacy-policy-en/
 # Unfolio — Privacy Policy
 
 **Effective date:** 3 August 2026
-**Last updated:** 16 November 2026
+**Last updated:** 20 November 2026
 
 **Publisher:** Afek Hasson, an individual developer based in Israel
 **Contact:** unfolio.ltd@gmail.com
@@ -83,7 +83,7 @@ The complete list of what is stored is:
 | **Snapshots** | A random identifier; the date and time of the import; the date in the export's file name; the usernames who follow you and the usernames you follow, each with the date Instagram recorded for the follow; the usernames you sent a follow request to that is still pending, each with the date Instagram recorded for the request; and the usernames you have blocked | So you can compare imports over time and see who unfollowed you since last time, without listing people you blocked; see which requests are still pending; and see how long you and a mutual have followed each other |
 | **Hidden accounts** | Usernames you have chosen to hide, and the date you hid them | So hidden accounts stay hidden across future imports |
 | **Marks** | Usernames you marked as unfollowed by you, or as a follow request you cancelled; the date you marked them; and the date of the first import that no longer showed them | So you can keep your place while you go through your lists. A mark is removed once two imports in a row no longer show you following that account, or that request as pending |
-| **App preferences** | Your chosen language, whether you have completed onboarding, your notification settings, which tips you have seen, and your own Instagram username (taken from the export's file name; you can change it) | So the app behaves consistently between launches, and shows which account the data belongs to |
+| **App preferences** | Your chosen language, whether you have completed onboarding, how far you got through the first-run steps, your notification settings, which tips you have seen, whether the app has already asked iOS to show Apple's rating prompt, and your own Instagram username (taken from the export's file name; you can change it) | So the app behaves consistently between launches, reopens where you left off, asks for a rating no more than once, and shows which account the data belongs to |
 | **Subscription status** | Whether your subscription was active the last time the app checked, and when that check happened. RevenueCat's code inside the app also keeps its own working data on the device: your anonymous user ID, a copy of your purchase status, the plans and prices it last fetched, and recent answers from RevenueCat's servers | So you can keep using the app for a few days without an internet connection. The app's copy stays on your device only; what RevenueCat receives is listed in section 7.2 |
 
 That is all. Note in particular what is *not* in that table: no full names, no profile pictures, no biographies, no email addresses, no phone numbers, no post content. Unfolio stores **usernames and dates**, plus the subscription status above, and nothing more.
@@ -131,6 +131,8 @@ Unfolio uses as few third-party services as it is possible to use and still sell
 Subscriptions and purchases are handled entirely by the **Apple App Store** or **Google Play**, depending on where you downloaded the app. They are the merchant of record for your purchase.
 
 This means Apple or Google — not us — processes your payment. **We never see and never receive your credit card number, bank details, billing address, or Apple/Google account credentials.** What we can see, through the reporting tools they provide, is aggregate and anonymised sales information: how many subscriptions were sold in a country, and the resulting revenue.
+
+**Rating prompt.** Once, after your second import, the app may ask iOS to show Apple's standard App Store rating prompt. iOS decides whether it appears. If you rate or review, that goes to Apple under Apple's terms; the app is not told whether the prompt appeared or what you chose.
 
 - [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
 - [Google Privacy Policy](https://policies.google.com/privacy)
